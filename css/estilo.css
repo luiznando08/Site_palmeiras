@@ -1,8 +1,9 @@
 /*estilizaçao padrao da pagina*/
 body{
+    background: linear-gradient(#ffffff,white,#94f7a6);
     margin: 0;
-    font-family:'Courier New', Courier, monospace
-    
+    font-family:'Courier New', Courier, monospace;
+
 }
 /*estilizaçao header da pagina */
 header{
@@ -63,5 +64,49 @@ nav li{
     margin-left:10%;
     margin-top:30px;
 }
+.nosso_estabelecimento{
+    text-align: center;
+    font-size: 30;
+}
+.mapa{
+    text-align: center;
+
+}
+.titulo_np{
+    
+    clear: right;
+    text-align: center;
+}
+.lista{
+    margin-left: 40%;
+    font-size: 150%;
+    margin-top: 10px;
+
+}
+.lista1{
+    margin-top: 0%;
+}
+.camisa{
+    float: right;
+    margin-right: 37%;
+    width: 10%;
+}
+.savoia{
+    width: 10%;
+    margin-left: 90%;
+}
+footer{
+    width: 100%;
+    background: #023B0C;
+    padding: 1% 0% 1% 0%;
+    margin-top: 10%;
+}
+.savoia{
+    margin-bottom: 30px;
+    width: 7%;
+}
+
+
+
 
 
