@@ -1,6 +1,6 @@
 /*estilizaçao padrao da pagina*/
 body{
-    background: linear-gradient(#ffffff,white,#44c55c);
+    background: linear-gradient(#ffffff,white,#b0eebb,#2e9440);
     margin: 0;
     font-family:'Courier New', Courier, monospace;
 
@@ -96,18 +96,30 @@ nav li{
     margin-left: 90%;
 }
 footer{
+    background: url(../img/allianz.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: darken;
     width: 100%;
-    background: #023B0C;
-    padding: 1% 0% 1% 0%;
+    padding: 100px 10px 10px 0;
     margin-top: 3%;
 }
 .savoia{
-    margin-bottom: 30px;
-    width: 7%;
+    width: 10%;
 }
 .video{
     margin-top: 10%;
     text-align: center;
+}
+footer p{
+    color: #ffffff;
+    font-size: 20;
+    padding-left: 79%;
+}
+footer a{
+    color: #ffffff;
+    text-decoration: none;
 }
 
 
