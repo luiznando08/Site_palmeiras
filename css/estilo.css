@@ -11,6 +11,11 @@ header{
     padding: 10px 0 10px 0;
     
 }
+header a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
 .logo{
     width: 10%;
     margin-left: 3%;
