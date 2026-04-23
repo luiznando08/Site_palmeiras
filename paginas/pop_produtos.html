@@ -1,0 +1,28 @@
+<html lang="PT-br">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <main>
+            <h1 id="nome-produto"></h1>
+            <img id="img-produto"  src="" >
+            <p id="desc-produto"></p>
+
+            <!--captura as informaçoes do parametro-->
+            <script>
+                //funçao para capturar os parametros
+                function getParametro(infoCapturar){
+                    urlparametro=new URLSearchParams(window.location.search);
+                    return urlparametro.get(infoCapturar)
+                }
+
+                //preenche as informaçoes no layout
+                document.getElementById("nome-produto").textContent = getParametro("nomeProduto");
+                document.getElementById("img-produto").src = getParametro("imgProduto");
+                document.getElementById("desc-produto").textContent = getParametro("descProduto");
+            </script>
+        </main>
+    </div>
+</body>
+</html>
