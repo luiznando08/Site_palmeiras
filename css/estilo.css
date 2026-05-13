@@ -1,6 +1,6 @@
 /*estilizaçao padrao da pagina*/
 body{
-    background: linear-gradient(#ffffff,white,#b0eebb,#2e9440);
+    background: linear-gradient(rgb(161, 248, 226),rgb(106, 253, 126));
     margin: 0;
     font-family:'Courier New', Courier, monospace;
 

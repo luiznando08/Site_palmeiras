@@ -1,13 +1,22 @@
 <html lang="PT-br">
 <head>
     <title>Document</title>
+    <link rel="stylesheet" href="../css/popup.css">
 </head>
 <body>
     <div>
         <main>
-            <h1 id="nome-produto"></h1>
-            <img id="img-produto"  src="" >
-            <p id="desc-produto"></p>
+            <h1 id="nome-produto" class="titulo"></h1>
+            <div class="slider">
+                <button class="botao" id="prevBtn">&#10094</button>
+                <img class="camisas"  id="slider-img" src="">
+                <button class="botao" id="nextBtn">&#10095</button>
+
+            </div>
+            
+            
+            <img id="img-produto"  src="" class="imagem" >
+            <p id="desc-produto" class="descricao"></p>
 
             <!--captura as informaçoes do parametro-->
             <script>
@@ -19,8 +28,39 @@
 
                 //preenche as informaçoes no layout
                 document.getElementById("nome-produto").textContent = getParametro("nomeProduto");
-                document.getElementById("img-produto").src = getParametro("imgProduto");
+                //document.getElementById("img-produto").src = getParametro("imgProduto");
                 document.getElementById("desc-produto").textContent = getParametro("descProduto");
+
+                //codigo slider
+                const imagens=getParametro("imgProduto")
+                             ? getParametro("imgProduto").split(',')
+                             : [];
+                let index = 0;
+                //guarda o elemento da imagem
+                const sliderImg=document.getElementById("slider-img")
+
+                function mostrarImagem(){
+                    if(imagens.length > 0){
+                        sliderImg.src=imagens[index];
+                    }
+                    console.log(imagens)
+                    console.log(index)
+                           
+                }
+
+                document.getElementById("prevBtn").onclick = function(){
+                    index = (index-1 + imagens.length) % imagens.length;
+                    mostrarImagem()
+                }
+
+                document.getElementById("nextBtn").onclick = function(){
+                    index = (index+1) % imagens.length;
+                    mostrarImagem()
+
+                }
+                //exibe a primeira imagem
+                mostrarImagem()
+
             </script>
         </main>
     </div>

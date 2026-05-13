@@ -40,29 +40,35 @@
         <!--Exibiçao dos produtos-->
         <div class="container">
             <script>
-                desc_produto1="estas sao as camisas do palmeiras de 2026 modelo jogador"
-                desc_produto2="estas sao as camisas do palmeiras de 2026 modelo torcedor"
-                desc_produto3="estas sao as camisas do palmeiras de 2025 modelo jogador"
-                desc_produto4="estas sao as camisas do palmeiras de 2025 modelo torcedor"
-                desc_produto5="estas sao as camisas do palmeiras de 2024 modelo jogador"
-                desc_produto6="estas sao as camisas do palmeiras de 2024 modelo torcedor"
+                desc_produto="estas sao as camisas do palmeiras de 2026 modelo jogador"
+                const slider1 = ['../img/produto/Captura de tela 2026-04-08 192513.png',
+                '../img/produto/images.jpg','../img/produto/camisa2026parapop.png'
+                ];
+                const desc_produto2="estas sao as camisas do palmeiras de 2026 modelo torcedor"
+                const slider2 = ['../img/produto/',
+                '../img/produto/images.jpg'
+                ];
+                const desc_produto3="estas sao as camisas do palmeiras de 2025 modelo jogador"
+                const desc_produto4="estas sao as camisas do palmeiras de 2025 modelo torcedor"
+                const desc_produto5="estas sao as camisas do palmeiras de 2024 modelo jogador"
+                const desc_produto6="estas sao as camisas do palmeiras de 2024 modelo torcedor"
             </script>
             
-            <div class="card" onclick="abrirdetalhes('camisa do palmeiras 2026', '../img/produto/Captura de tela 2026-04-08 192513.png', desc_produto1)">
+            <div class="card" onclick="abrirdetalhes('camisa do palmeiras 2026', slider1, desc_produto)">
                 <img src="../img/produto/Captura de tela 2026-04-08 192513.png">
                 <h2>camisa 2026</h2>
                 <p>camisa palmeiras modelo jogador</p>
                 <p>R$599</p>
             </div>
 
-            <div class="card" onclick="abrirdetalhes('camisa do palmeiras 2026', '../img/produto/Captura de tela 2026-04-08 192513.png', desc_produto2)">
+            <div class="card" onclick="abrirdetalhes('camisa do palmeiras 2026', slider1, desc_produto2)">
                 <img src="../img/produto/Captura de tela 2026-04-08 192513.png">
                 <h2>camisa 2026</h2>
                 <p>camisa palmeiras modelo torcedor</p>
                 <p>R$299</p>
             </div>
 
-            <div class="card card4" onclick="abrirdetalhes('camisa do palmeiras 2025', '../img/produto/086020890-e1743530882686-removebg-preview.png', desc_produto3)">
+            <div class="card card4" onclick="abrirdetalhes('camisa do palmeiras 2025', slider2, desc_produto3)">
                 <img src="../img/produto/086020890-e1743530882686-removebg-preview.png">
                 <h2>camisa 2025</h2>
                 <p>camisa palmeiras modelo jogador</p>
@@ -75,7 +81,7 @@
         <div class="container">
             
 
-            <div class="card card4" onclick="abrirdetalhes('camisa do palmeiras 2025', '../img/produto/086020890-e1743530882686-removebg-preview.png', desc_produto4)">
+            <div class="card card4" onclick="abrirdetalhes('camisa do palmeiras 2025', slider2, desc_produto4)">
                 <img src="../img/produto/086020890-e1743530882686-removebg-preview.png">
                 <h2>camisa 2025</h2>
                 <p>camisa palmeiras modelo torcedor</p>
@@ -83,7 +89,7 @@
             </div>
             
             
-            <div class="card" onclick="abrirdetalhes('camisa do palmeiras 2025', '../img/produto/image-removebg-preview.png', desc_produto5)">
+            <div class="card" onclick="abrirdetalhes('camisa do palmeiras 2025', slider3, desc_produto5)">
                <img src="../img/produto/image-removebg-preview.png">
                 <h2>camisa 2024</h2>
                 <p>camisa palmeiras modelo jogador</p>
@@ -91,7 +97,7 @@
             </div>
             
             
-            <div class="card" onclick="abrirdetalhes('camisa do palmeiras 2025', '../img/produto/image-removebg-preview.png', desc_produto6)">
+            <div class="card" onclick="abrirdetalhes('camisa do palmeiras 2025', slider3, desc_produto6)">
                 <img src="../img/produto/image-removebg-preview.png">
                 <h2>camisa 2024</h2>
                 <p>camisa palmeiras modelo torcedor</p>
