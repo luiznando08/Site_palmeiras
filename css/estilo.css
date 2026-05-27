@@ -1,6 +1,6 @@
 /*estilizaçao padrao da pagina*/
 body{
-    background: linear-gradient(rgb(161, 248, 226),rgb(106, 253, 126));
+    background-image: radial-gradient(#1b550b);
     margin: 0;
     font-family:'Courier New', Courier, monospace;
 
@@ -17,19 +17,19 @@ header a{
 
 }
 .logo{
-    width: 10%;
-    margin-left: 3%;
+    width: 3%;
+    margin-left: 6%;
 }
 nav{
     color: aliceblue;
     position: absolute;
-    top: 20px;  
-     font-size: 30;
+    top: 3px;  
+     font-size: 20;
      right: 3%;
 }
 nav li{
     display: inline;
-    margin-right: 60px;
+    margin-right: 30px;
     
 }
 .divHeader{
@@ -42,63 +42,121 @@ nav li{
     object-position:bottom;
 
 }
+.banner{
+    position: relative;
 
-.elenco{
-    
-    width: 20%;
+    width: 100%;
+    height: 500px;
+
+    overflow: hidden;
+}
+
+/* IMAGEM */
+.banner img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* DEGRADE */
+.degrade{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        to bottom,
+        rgb(0, 0, 0),
+        rgba(0, 0, 0, 0.089)
+    );
+}
+.texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    color: rgb(190, 255, 178);
+
+    text-align: center;
+}
+.texto h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.texto p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* sobre nós */
+.sobre_nos{
+    display: flex;
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+.sobre_nos div{
+    color: #ffffff;
+    margin-top: 3%;
     margin-left: 10%;
-    float: left;
+    width: 100%;
+}
+.sobre_nos h1{
+    margin-bottom: 10%;
+}
+.p{
+    color: #93944c;
+}
+.sobre_nos img{
+    width: 50%;
+    margin-right: 4%;
+    margin-left: 10%;
+    object-fit: cover;
+    display: block;
 
-    margin-right: 20px;
+}
 
+.container{
+    display: flex;
 }
-.sobrenos{
-    width: 70%;   
-    margin-left: 15%;
-    text-align: justify;
+.video{
+    margin-left: 3% ;
 }
-.titulo_sobrenos{
-    clear: left;
-    text-align: center;
-    font-size: 30;
+.video h4{
+    color: #93944c;
+}
+.palavra{
+    color: #ffffff;
+}
 
-}
-.paragrafosobrenos{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-right:20%;
-    margin-left:10%;
-    margin-top:30px;
-}
-.nosso_estabelecimento{
-    text-align: center;
-    font-size: 30;
-}
 .mapa{
-    text-align: center;
+    margin-left: 18%;
+}
+.mapa h4{
+    color: #93944c;
 
 }
-.titulo_np{
-    
-    clear: right;
-    text-align: center;
+.linha{
+    width: 80px;         
+    height: 4px;         
+    background-color: #93944c; 
+    border-radius: 10px; 
+    margin-top: 15px;    
+    margin-bottom: 25px; 
 }
-.lista{
-    margin-left: 40%;
-    font-size: 150%;
-    margin-top: 10px;
 
-}
-.lista1{
-    margin-top: 0%;
-}
-.camisa{
-    float: right;
-    margin-right: 37%;
-    width: 10%;
-}
 .savoia{
     width: 10%;
     margin-left: 90%;
+    position: relative;
 }
 footer{
     background: url(../img/allianz.jpg);
@@ -110,14 +168,7 @@ footer{
     padding: 100px 10px 10px 0;
     margin-top: 3%;
 }
-.savoia{
-    width: 10%;
-}
-.video{
-    margin-top: 10%;
-    text-align: center;
-}
-footer p{
+.contatos{
     color: #ffffff;
     font-size: 20;
     padding-left: 79%;
@@ -125,6 +176,20 @@ footer p{
 footer a{
     color: #ffffff;
     text-decoration: none;
+}
+.palmeiras{
+    color: #ffffff;
+    width: 40%;
+    position: relative;
+    left: 10;
+    top: 50;
+}
+.palmeiras h1{
+    font-size: 20px;
+}
+.palmeiras p{
+    font-size: 15px;
+    color: #afafaf;
 }
 
 

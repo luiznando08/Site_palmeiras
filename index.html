@@ -12,7 +12,7 @@
                 <!--Lista de itens do menu-->
                 <nav>
                     <ul>
-                        <li>contato</li>
+                        <li><a href="paginas/contatos.html">contato</a></li>
                         <li><a href="paginas/produtos.html" >Produtos</a></li>
                         <li><a href="index.html">home</a></li>
                     </ul>
@@ -20,41 +20,74 @@
             </div>
         </header>
         <!--banner-->
-        <img src="img/allianz.jpg" class="allianz"/>
-        <main>
-            <!--sobre nós-->
-            <section class="sobrenos">
-                <h2 class="titulo_sobrenos">Sobre nós</h2>
-                <img src="img/elenco.jpg" class="elenco"/>
-                <p class="paragrafosobrenos"> <strong>O Palmeiras</strong> foi fundado em 26 de agosto de 1914 como Palestra Itália e se tornou um dos clubes mais vitoriosos do futebol brasileiro, com conquistas nacionais e internacionais.
-<br><br>
-O clube nasceu no bairro do Brás, em São Paulo, fundado por imigrantes italianos que buscavam representar sua comunidade no futebol paulista. Inicialmente chamado Palestra Itália, o nome remete a "ginásio" ou "academia" em italiano, simbolizando a prática esportiva e a integração social da colônia italiana. Entre os fundadores estavam Luigi Cervo, Luigi Marzo, Vincenzo Ragognetti e Ezequiel Simone, que se tornaria o primeiro presidente do clube. A primeira partida oficial ocorreu em 24 de janeiro de 1915, com vitória de 2 a 0 sobre o Savóia.</p>
-            </section>
-            <!--nosso estabelecimento-->
-            <section class="mapa">
-                <h2 class="nosso_estabelecimento">Nosso Estabelecimento</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1358517127
-                014!2d-46.6810411237892!3d-23.52761576035509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
-                .1!3m3!1m2!1s0x94ce57fd1d715d45%3A0x864e5421d6195cb1!2sAllianz%20Parque!5e0!3m2!1sp
-                t-BR!2sbr!4v1772663719451!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="banner">   
+            <div class="degrade"></div>
             
-            </section class="produtos">
-            <section class="nossos_produtos">
-                <h2 class="titulo_np">nossos produtos</h2>
-                <img src="img/camisa.png" class="camisa">
-                <li class="lista lista1">camisas</li>
-                <li class="lista lista2">bonés</li>
-                <li class="lista lista3">tenis</li>
-            </section>
-        </main>
-        <div class="video">
-            <h2>tour pelo allianz</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qmTZ6Gwr8Ng?si=TGHszI2ZmG1tW4S3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    
+            <img src="img/allianz.jpg" class="allianz"/>
+            <div class="texto">
+                <h1>MAIOR CAMPEÃO DO BRASIL</h1>
+                <p>Paixão que nos une, historia que nos orgulha.</p>
+            </div>
+        </section>
+        
+        <!--sobre nós-->
+        <section class="sobre_nos"> 
+            <div>
+                <p class="p">nossa historia</p>
+                
+                <h1>Sobre o palmeiras</h1>
+                <div class="linha2"></div>
+                <p>
+                    A Sociedade Esportiva Palmeiras é um dos maiores clubes do Brasil e do mundo.
+                    Fundado em 1914, o Verdão construiu uma história marcada por títulos,
+                    paixão e uma torcida que nunca abandona.
+                </p>
+
+                <p>
+                    Conhecido como Maior Campeão do Brasil, o Palmeiras possui conquistas
+                    nacionais e internacionais inesquecíveis, além de um dos estádios
+                    mais modernos da América Latina: o Allianz Parque.
+                </p>
+            </div>
+
+                <img src="./img/torcida.png">
+        </section>
+
+        
+        
+        <!--mapa e video-->
+        
+        <section class="container">
+
+            <div class="mapa">
+                <h4>NOSSO ESTABELECIMENTO</h4>
+                <h1 class="palavra">aonde estamos</h1>
+                <div class="linha"></div>
+                <p class="palavra">Venha nos visitar! Estamos localizados em uma região de fácil acesso.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1360212796044!2d-46.68099702391547!3d-23.527609660354507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce590029f3d141%3A0x4320a0089439e950!2sNubank%20Parque!5e0!3m2!1spt-BR!2sbr!4v1779381804467!5m2!1spt-BR!2sbr" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="video">
+                <h4>CONHEÇA CADA DETALHE</h4>
+                <h1 class="palavra">Tour pelo nosso espaço</h1>
+                <div class="linha"></div>
+
+                <p class="palavra">
+                    Assista ao vídeo e descubra cada detalhe do nosso estabelecimento.
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qmTZ6Gwr8Ng?si=SeiMZxYNm8rrXiae" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </section>
+
+
         <footer>
             <div class="div_footer">    
                 <img src="img/savoia.webp" class="savoia">    
+            </div>
+            <div class="palmeiras">
+                <h1>palmeiras</h1>
+                <p>Sociedade Esportiva Palmeiras — fundado em 26 de agosto de 1914.</p>
             </div>
             <p class="contatos">
                 <a href="https://wa.me/5511976722117" target="_blank"><i class="fa fa-whatsapp"></i>(11)97672-2117</a> / <a href="https://instagram.com/palmeiras" target="_blank"><i class="fa fa-instagram"></i> @palmeiras_</a></p>

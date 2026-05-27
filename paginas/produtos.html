@@ -3,12 +3,13 @@
 <head>
     <title>Produtos</title>
     <link rel="stylesheet" href="../css/produtos.css">
+    <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script>
         function abrirdetalhes (nome,imagem,descricao){
             url =`pop_produtos.html?nomeProduto=${encodeURIComponent(nome)}&imgProduto=${encodeURIComponent(imagem)}&descProduto=${encodeURIComponent(descricao)}`;
             
-            window.open(url,"pop_produtos.html","_blank", "width=800,height=700")
+            window.open(url,"pop_produtos.html","_blank", "width=400,height=300")
         }
     </script>
 </head>
@@ -17,9 +18,9 @@
             <div class="divHeader">
                 <img src="../img/logo.webp" class="logo"/>
                 <!--Lista de itens do menu-->
-                <nav class="naves">
+                <nav>
                     <ul>
-                        <li><a href="">contato</a></li>
+                        <li><a href="./contatos.html">contato</a></li>
                         <li><a href="produtos.html">Produtos</a></li>
                         <li><a href="../index.html">home</a></li>
                     </ul>
@@ -40,18 +41,34 @@
         <!--Exibiçao dos produtos-->
         <div class="container">
             <script>
-                desc_produto="estas sao as camisas do palmeiras de 2026 modelo jogador"
+                const desc_produto="estas sao as camisas do palmeiras de 2026 modelo jogador"
+                const desc_produto2="estas sao as camisas do palmeiras de 2026 modelo torcedor(Bordado)"
                 const slider1 = ['../img/produto/Captura de tela 2026-04-08 192513.png',
-                '../img/produto/images.jpg','../img/produto/camisa2026parapop.png'
+                '../img/produto/images.png','../img/produto/camisa2026parapop.png'
                 ];
-                const desc_produto2="estas sao as camisas do palmeiras de 2026 modelo torcedor"
-                const slider2 = ['../img/produto/',
-                '../img/produto/images.jpg'
-                ];
+
+
                 const desc_produto3="estas sao as camisas do palmeiras de 2025 modelo jogador"
-                const desc_produto4="estas sao as camisas do palmeiras de 2025 modelo torcedor"
+                const desc_produto4="estas sao as camisas do palmeiras de 2025 modelo torcedor(Bordado)"
+                const slider2 = ['../img/produto/086020890-e1743530882686-removebg-preview.png','../img/produto/camisa 2025 branca.png',
+                '../img/produto/camisa 2025 branca usando.png'
+                ];
+                
                 const desc_produto5="estas sao as camisas do palmeiras de 2024 modelo jogador"
-                const desc_produto6="estas sao as camisas do palmeiras de 2024 modelo torcedor"
+                const desc_produto6="estas sao as camisas do palmeiras de 2024 modelo torcedor(Bordado)"
+                const slider3 = ['../img/produto/image-removebg-preview.png','../img/produto/camisa2024verde.png',
+                '../img/produto/camisa2024verde2.png'
+                ];
+                
+                const desc_produto7="estes são os corta ventos modelo 25/26 escudo colado"
+                const slider4 = ['../img/produto/cortaventopalmeiras.png','../img/produto/cortaventopalmeirast.png'
+                ];
+                
+                const desc_produto8="relogio Palmeiras edição especial são Marcos"
+                const slider5 = ['../img/produto/relogio1.png','../img/produto/relogio2.png',
+                '../img/produto/relogio3.png'
+                ];
+                
             </script>
             
             <div class="card" onclick="abrirdetalhes('camisa do palmeiras 2026', slider1, desc_produto)">
@@ -74,23 +91,21 @@
                 <p>camisa palmeiras modelo jogador</p>
                 <p>R$259</p>
             </div>
-        </div>
-        
-        
-        
-        <div class="container">
-            
 
             <div class="card card4" onclick="abrirdetalhes('camisa do palmeiras 2025', slider2, desc_produto4)">
                 <img src="../img/produto/086020890-e1743530882686-removebg-preview.png">
                 <h2>camisa 2025</h2>
                 <p>camisa palmeiras modelo torcedor</p>
-                <p>R$190</p>
+                <p>R$210</p>
             </div>
+        </div>
+        
+        
+        <div class="container">
             
             
             <div class="card" onclick="abrirdetalhes('camisa do palmeiras 2025', slider3, desc_produto5)">
-               <img src="../img/produto/image-removebg-preview.png">
+                <img src="../img/produto/image-removebg-preview.png">
                 <h2>camisa 2024</h2>
                 <p>camisa palmeiras modelo jogador</p>
                 <p>R$259</p>
@@ -101,7 +116,21 @@
                 <img src="../img/produto/image-removebg-preview.png">
                 <h2>camisa 2024</h2>
                 <p>camisa palmeiras modelo torcedor</p>
-                <p>R$259</p>
+                <p>R$205</p>
+            </div>
+
+            <div class="card" onclick="abrirdetalhes('camisa do palmeiras 2025', slider4, desc_produto7)">
+                <img src="../img/produto/cortaventopalmeiras.png">
+                <h2>corta vento</h2>
+                <p>corta vento do palmeiras branco</p>
+                <p>R$949</p>
+            </div>
+
+            <div class="card" onclick="abrirdetalhes('camisa do palmeiras 2025', slider5, desc_produto8)">
+                <img src="../img/produto/relogio1.png">
+                <h2>relogio</h2>
+                <p>relogio ediçao especial marcos </p>
+                <p>R$590</p>
             </div>
         </div>
     </main>    
